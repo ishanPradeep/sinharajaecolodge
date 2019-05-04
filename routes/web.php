@@ -15,6 +15,9 @@
 //     return view('home');
 // });
 Route::get('/', 'HomeController@index');
+Route::get('https://sinharajaecolodge.herokuapp.com/', 'HomeController@index');
+
+
 
 Route::get('/about-us', 'AboutController@getAboutUs')->name('about-us');
 Route::get('/about-sinharaja', 'AboutController@getAboutSinharaja')->name('about-sinharaja');
