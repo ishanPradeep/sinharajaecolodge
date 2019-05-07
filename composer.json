@@ -19,7 +19,6 @@
         "ext-mcrypt": "*",
         "ext-memcached": "*",
         "ext-mongodb": "^1.1.0",
-        "gd": ">=2.0.28",
         "ext-gd": "*"
     },
     "require-dev": {
