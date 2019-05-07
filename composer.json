@@ -18,7 +18,9 @@
         "ext-bcmath": "*",
         "ext-mcrypt": "*",
         "ext-memcached": "*",
-        "ext-mongodb": "^1.1.0"
+        "ext-mongodb": "^1.1.0",
+        "gd": ">=2.0.28",
+        "ext-gd": "*"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
