@@ -14,7 +14,9 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "tcg/voyager": "^1.1",
-        "unisharp/laravel-filemanager": "~1.8"
+        "unisharp/laravel-filemanager": "~1.8",
+         "ext-gd": "*"
+
 
 
     },
@@ -24,8 +26,7 @@
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^2.0",
-        "phpunit/phpunit": "^7.0",
-        "ext-gd": "*"
+        "phpunit/phpunit": "^7.0"
     },
     "config": {
         "optimize-autoloader": true,
