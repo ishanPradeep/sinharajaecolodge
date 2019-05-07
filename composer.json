@@ -14,8 +14,7 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "tcg/voyager": "^1.1",
-        "unisharp/laravel-filemanager": "~1.8",
-        "ext-gd": "dev-master" (tried also installing "gd":"*", "ext-gd" : "*")
+        "unisharp/laravel-filemanager": "~1.8"
 
 
     },
