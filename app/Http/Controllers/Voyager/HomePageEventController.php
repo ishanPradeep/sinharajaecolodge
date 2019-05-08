@@ -63,7 +63,7 @@ class HomePageEventController extends Controller
                     $originalPath = public_path().'/photos/';
                     
                     $thumbnailImage->save($originalPath.time().$request->file()['image']->getClientOriginalName());
-                    $thumbnailImage->resize(300,350);
+                    // $thumbnailImage->resize(300,350);
                     $thumbnailImage->save($thumbnailPath.time().$request->file()['image']->getClientOriginalName());
 
                     $event->image=time().$request->file()['image']->getClientOriginalName();
