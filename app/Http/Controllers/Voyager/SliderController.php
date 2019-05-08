@@ -89,7 +89,7 @@ class SliderController extends Controller
                     $originalPath = public_path().'/photos/';
                     
                     $thumbnailImage->save($originalPath.time().$request->file()['back_image1']->getClientOriginalName());
-                    $thumbnailImage->resize(300,350);
+                    // $thumbnailImage->resize(300,350);
                     $thumbnailImage->save($thumbnailPath.time().$request->file()['back_image1']->getClientOriginalName());
 
                     $slider->back_image1=time().$request->file()['back_image1']->getClientOriginalName();
@@ -101,7 +101,7 @@ class SliderController extends Controller
                     $originalPath = public_path().'/photos/';
                     
                     $thumbnailImage->save($originalPath.time().$request->file()['back_image2']->getClientOriginalName());
-                    $thumbnailImage->resize(300,350);
+                    // $thumbnailImage->resize(300,350);
                     $thumbnailImage->save($thumbnailPath.time().$request->file()['back_image2']->getClientOriginalName());
 
                     $slider->back_image2=time().$request->file()['back_image2']->getClientOriginalName();
@@ -114,7 +114,7 @@ class SliderController extends Controller
                     $originalPath = public_path().'/photos/';
                     
                     $thumbnailImage->save($originalPath.time().$request->file()['back_image3']->getClientOriginalName());
-                    $thumbnailImage->resize(300,350);
+                    // $thumbnailImage->resize(300,350);
                     $thumbnailImage->save($thumbnailPath.time().$request->file()['back_image3']->getClientOriginalName());
 
                     $slider->back_image3=time().$request->file()['back_image3']->getClientOriginalName();

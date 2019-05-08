@@ -35,7 +35,7 @@
 
                             {!! $errors->first('back_image1', '<span class="error-block">:message</span">') !!}
                             <br>
-                            <img src="{{ asset('slider/'.$slider->back_image1) }}" width="270" alt=" " class="img-fluid" />
+                            <img src="{{ asset('slider/'.$slider->back_image1) }}" width="270" height="300"  alt=" " class="img-fluid" />
                         </div>
 
                         <div class="form-group col-md-6" data-aos="">
@@ -45,7 +45,7 @@
 
                             {!! $errors->first('back_image2', '<span class="error-block">:message</span">') !!}
                             <br>
-                            <img src="{{ asset('slider/'.$slider->back_image2) }}" width="270" alt=" " class="img-fluid" />
+                            <img src="{{ asset('slider/'.$slider->back_image2) }}" width="270" height="300" alt=" " class="img-fluid" />
                         </div>
 
                         <div class="form-group col-md-6" data-aos="">
@@ -55,7 +55,7 @@
 
                             {!! $errors->first('back_image3', '<span class="error-block">:message</span">') !!}
                                 <br>
-                            <img src="{{ asset('slider/'.$slider->back_image3) }}" width="270" alt=" " class="img-fluid" />
+                            <img src="{{ asset('slider/'.$slider->back_image3) }}" width="270" height="300" alt=" " class="img-fluid" />
                         </div>
                       
                         <div class="form-group col-md-6" data-aos="">
@@ -64,7 +64,7 @@
                                 <small id="fileHelp" class="form-text text-muted">Size of image should not be more than 4MB.</small>
                             {!! $errors->first('logo_image', '<span class="error-block">:message</span">') !!}
                                 <br>
-                            <img src="{{ asset('slider/'.$slider->logo_image) }}" width="270" alt=" " class="img-fluid" />
+                            <img src="{{ asset('slider/'.$slider->logo_image) }}" width="270" height="300" alt=" " class="img-fluid" />
                         </div>
                        
                         <div class="form-group col-md-12" data-aos="">
