@@ -22,3 +22,5 @@ yarn-error.log
 /public/thumbnail
 /public/trekkings
 /public/waterfalls
+composer.json
+composer.lock

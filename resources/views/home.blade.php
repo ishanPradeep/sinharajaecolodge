@@ -94,11 +94,9 @@
 <!-- //banner-bottom --> 
 
 
-<!-- register -->
-
 
     <div class="home-page-event" style="
-    background: url({{'thumbnail/'.$homePageEvent->image}}) no-repeat 0px 0px;
+    background: url({{ asset('thumbnail/'.$homePageEvent->image) }}) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

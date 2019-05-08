@@ -46,7 +46,7 @@ class HomePageEventController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'image' => 'max:4060|image|mimes:jpeg,png,jpg,gif,svg',
+            'image' => 'max:5060|image|mimes:jpeg,png,jpg,gif,svg',
             'image1'=> 'required',
             'title'=>'required',
             'description'=>'required',
@@ -69,7 +69,7 @@ class HomePageEventController extends Controller
                     $event->image=time().$request->file()['image']->getClientOriginalName();
                 }
                 
-           
+                 
         $event->save();
         $event = HomePageEvent::find(1);
 
