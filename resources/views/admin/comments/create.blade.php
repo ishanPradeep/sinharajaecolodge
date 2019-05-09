@@ -42,7 +42,7 @@
                              <label class="awesome">Comments</label>
                              <textarea rows="4" cols="50" name="says" class="form-control"></textarea>
 
-                            {!! $errors->first('description', '<span class="error-block">:message</span">') !!}
+                            {!! $errors->first('says', '<span>:message</span">') !!}
                         </div>
                         <div class="form-group col-md-12" data-aos="">
                              <label class="awesome">User Image </label>

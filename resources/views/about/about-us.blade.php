@@ -22,7 +22,9 @@
         </div>
     </div>  
     <!--/newsletter-->
-    <section class="newsletter_right_w3agile  py-md-5 py-4" style="background-image:url( {{empty(asset('storage/'.$slider->back_image1)) ? '' : (asset('storage/'.$subscribe->image))}})">
+
+
+    <section class="newsletter_right_w3agile  py-md-5 py-4" style="background-image:url( {{empty(asset('images/1.jpeg')) ? '' : (asset('images/1.jpeg'))}})">
 
         <div class="container">
             <div class="inner-sec-w3layouts py-md-5 py-3">

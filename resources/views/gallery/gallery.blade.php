@@ -28,7 +28,8 @@
                                         <div class="wthree_gallery_grid">
                                             <a href="{{ route('gallery-event_activities') }}" class="lsb-preview" data-lsb-group="header">
                                                 <div class="view second-effect">
-                                                    <img src="images/9.jpg" alt="" class="img-responsive" />
+                                                    <img class="img-responsive" src="{{asset('thumbnail/'.$eventActivity->image)}}">
+
                                                     <div class="mask">
                                                         <p>Event & Activities</p>
                                                     </div>
@@ -55,7 +56,7 @@
                                         <div class="wthree_gallery_grid">
                                             <a href="{{ route('gallery-waterfalls') }}" class="lsb-preview" data-lsb-group="header">
                                                 <div class="view second-effect">
-                                                    <img src="images/9.jpg" alt="" class="img-responsive" />
+                                                    <img class="img-responsive" src="{{asset('thumbnail/'.$galleryWaterfall->image)}}">
                                                     <div class="mask">
                                                         <p>Waterfalls</p>
                                                     </div>
@@ -67,7 +68,7 @@
                             </a>
                         </div>
                     </div>
-
+          
                     <div class="col-sm-4  agileits_w3layouts_gallery_grid1 w3layouts_gallery_grid1 hover14" style="    margin-bottom: 10%;">
                         <div class="w3_agile_gallery_effect">
                             <div  style="margin-bottom: 4%">
@@ -81,7 +82,7 @@
                                         <div class="wthree_gallery_grid">
                                             <a href="{{ route('gallery-foods') }}" class="lsb-preview" data-lsb-group="header">
                                                 <div class="view second-effect">
-                                                    <img src="images/9.jpg" alt="" class="img-responsive" />
+                                                    <img class="img-responsive" src="{{asset('thumbnail/'.$galleryFood->image)}}">
                                                     <div class="mask">
                                                         <p>Foods</p>
                                                     </div>
@@ -93,6 +94,8 @@
                             </a>
                         </div>
                     </div>
+
+           
 
                     <div class="col-sm-4  agileits_w3layouts_gallery_grid1 w3layouts_gallery_grid1 hover14" style="    margin-bottom: 10%;">
                         <div class="w3_agile_gallery_effect">
@@ -107,7 +110,7 @@
                                         <div class="wthree_gallery_grid">
                                             <a href="{{ route('gallery-accommodation') }}" class="lsb-preview" data-lsb-group="header">
                                                 <div class="view second-effect">
-                                                    <img src="images/9.jpg" alt="" class="img-responsive" />
+                                                    <img class="img-responsive" src="{{asset('thumbnail/'.$galleryAccommodation->image)}}">
                                                     <div class="mask">
                                                         <p>Accommodation</p>
                                                     </div>
@@ -133,7 +136,7 @@
                                         <div class="wthree_gallery_grid">
                                             <a href="{{ route('gallery-trekking') }}" class="lsb-preview" data-lsb-group="header">
                                                 <div class="view second-effect">
-                                                    <img src="images/9.jpg" alt="" class="img-responsive" />
+                                                    <img class="img-responsive" src="{{asset('thumbnail/'.$galleryTrekking->image)}}">
                                                     <div class="mask">
                                                         <p>Trekking</p>
                                                     </div>
@@ -159,7 +162,7 @@
                                         <div class="wthree_gallery_grid">
                                             <a href="{{ route('gallery-camping') }}" class="lsb-preview" data-lsb-group="header">
                                                 <div class="view second-effect">
-                                                    <img src="images/9.jpg" alt="" class="img-responsive" />
+                                                    <img class="img-responsive" src="{{asset('thumbnail/'.$galleryCamping->image)}}">
                                                     <div class="mask">
                                                         <p>Camping</p>
                                                     </div>

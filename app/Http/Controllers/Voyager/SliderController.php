@@ -47,10 +47,10 @@ class SliderController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'logo_image' => 'max:4060|image|mimes:jpeg,png,jpg,gif,svg',
-            'back_image1' => 'max:4060|image|mimes:jpeg,png,jpg,gif,svg',
-            'back_image2' => 'max:4060|image|mimes:jpeg,png,jpg,gif,svg',
-            'back_image3' => 'max:4060|image|mimes:jpeg,png,jpg,gif,svg',
+            'logo_image' => 'mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
+            'back_image1' => 'max:4060|mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
+            'back_image2' => 'max:4060|mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
+            'back_image3' => 'max:4060|mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
             'back_image_one'=> 'required',
             'back_image_two'=> 'required',
             'back_image_three'=> 'required',

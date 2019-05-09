@@ -10,7 +10,7 @@
 
 @section('content')
     <h1 class="page-title">
-        <i class="glyphicon glyphicon-glass"></i> Update Food
+        <i class="glyphicon glyphicon-glass"></i> Update Accommodations
     </h1>
     <div class="page-content container-fluid">
         <div class="row">

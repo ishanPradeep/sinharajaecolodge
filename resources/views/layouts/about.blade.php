@@ -81,7 +81,7 @@
 
     <!-- banner -->
 
-    <div class="banner1" style="height: 150px; background-image:url( {{empty(asset('storage/'.$slider->back_image1)) ? '' : (asset('storage/'.$slider->back_image1))}})">
+    <div class="banner1" style="height: 239px; background-image:url( {{empty(asset('images/1.jpeg')) ? '' : (asset('images/1.jpeg'))}})">
         <nav class="navbar navbar-default">
             <div class="navbar-header navbar-left">
                

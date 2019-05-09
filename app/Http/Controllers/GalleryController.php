@@ -35,7 +35,15 @@ class GalleryController extends Controller
         $homePageEvent= HomePageEvent::orderBy('created_at', 'desc')->first();
         $adventure = Adventure::orderBy('created_at', 'desc')->first();
         $slider = Slider::orderBy('created_at', 'desc')->first();
-        return view('gallery/gallery',['slider'=>$slider,'adventure'=>$adventure , 'homePageEvent'=>$homePageEvent , 'galleryInfo'=>$galleryInfo , 'customerSay'=>$customerSay ,'customers'=>$customers,'us'=>$us]);
+
+        $eventActivity = GalleryEventActivity::orderBy('created_at', 'desc')->first();
+        $galleryAccommodation=GalleryAccommodation::orderBy('created_at', 'desc')->first();
+        $galleryCamping=GalleryCamping::orderBy('created_at', 'desc')->first();
+        $galleryFood=GalleryFood::orderBy('created_at', 'desc')->first();
+        $galleryTrekking=GalleryTrekking::orderBy('created_at', 'desc')->first();
+        $galleryWaterfall=GalleryWaterfall::orderBy('created_at', 'desc')->first();
+
+        return view('gallery/gallery',['eventActivity' =>$eventActivity ,'galleryWaterfall' =>$galleryWaterfall ,'galleryAccommodation' =>$galleryAccommodation ,'galleryCamping' =>$galleryCamping ,'galleryFood' =>$galleryFood ,'galleryTrekking' =>$galleryTrekking ,'slider'=>$slider,'adventure'=>$adventure , 'homePageEvent'=>$homePageEvent , 'galleryInfo'=>$galleryInfo , 'customerSay'=>$customerSay ,'customers'=>$customers,'us'=>$us]);
 
         
         return view('gallery/gallery');
