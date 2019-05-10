@@ -30,20 +30,25 @@
                         <div class="form-group col-md-12" data-aos="">
                             <label class="awesome">Title</label>
                             <input type="text" name="title" value="{{old('title', $event->title)}}" placeholder="Title" class="form-control">
-                            {!! $errors->first('title', '<span class="error-block">:message</span">') !!}
+                            <p>
+                                {!! $errors->first('title', '<span class="error-block">:message</span">') !!}
+                            </p>
                         </div>
                         <div class="form-group col-md-12" data-aos="">
                              <label class="awesome">Description</label>
                              <textarea rows="4" cols="50" name="description" class="form-control">{{$event->description}}</textarea>
-
-                            {!! $errors->first('description', '<span class="error-block">:message</span">') !!}
+                             <p> 
+                                {!! $errors->first('description', '<span class="error-block">:message</span">') !!}
+                             </p>
                         </div>
                         <div class="form-group col-md-6" data-aos="">
                              <label class="awesome">Background Image </label>
                             <input type="file" name="image" >
                             <small id="fileHelp" class="form-text text-muted">Size of image should not be more than 2MB.</small>
-
-                            {!! $errors->first('image', '<span class="error-block">:message</span">') !!}
+                            <br>
+                            <p>
+                                {!! $errors->first('image', '<span class="error-block">:message</span">') !!}
+                            </p>
 
                             <br>
                             <img src="{{ asset('thumbnail/'.$event->image) }}" width="270" alt=" " class="img-fluid" />

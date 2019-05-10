@@ -47,7 +47,7 @@ class SliderController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'logo_image' => 'mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
+            'logo_image' => 'max:4060|mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
             'back_image1' => 'max:4060|mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
             'back_image2' => 'max:4060|mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
             'back_image3' => 'max:4060|mimes:jpeg,png,bmp,jpg,gif,svg,pdf',
@@ -68,6 +68,7 @@ class SliderController extends Controller
             'email' => 'required|email|max:255',
             'address'=>'required',
         ]); 
+
         $slider = Slider::find(1);
         $slider->banner_header =$request->banner_header;
         $slider->banner_info_title =$request->banner_info_title;
@@ -84,51 +85,34 @@ class SliderController extends Controller
 
             
                 if (!empty($request->file()['back_image1'])) {
-                    $thumbnailImage = Image::make($request->file()['back_image1']);
-                    $thumbnailPath = public_path().'/slider/';
-                    $originalPath = public_path().'/photos/';
-                    
-                    $thumbnailImage->save($originalPath.time().$request->file()['back_image1']->getClientOriginalName());
-                    // $thumbnailImage->resize(300,350);
-                    $thumbnailImage->save($thumbnailPath.time().$request->file()['back_image1']->getClientOriginalName());
 
-                    $slider->back_image1=time().$request->file()['back_image1']->getClientOriginalName();
+                    $file = $request->file('back_image1');
+                    $new_name = rand() . '.' . $file->getClientOriginalExtension();
+                    $file->move(public_path('slider'), $new_name);
+                    $slider->back_image1 = $new_name;
+
                 }
                 if (!empty($request->file()['back_image2'])) {
 
-                    $thumbnailImage = Image::make($request->file()['back_image2']);
-                    $thumbnailPath = public_path().'/slider/';
-                    $originalPath = public_path().'/photos/';
-                    
-                    $thumbnailImage->save($originalPath.time().$request->file()['back_image2']->getClientOriginalName());
-                    // $thumbnailImage->resize(300,350);
-                    $thumbnailImage->save($thumbnailPath.time().$request->file()['back_image2']->getClientOriginalName());
-
-                    $slider->back_image2=time().$request->file()['back_image2']->getClientOriginalName();
+                    $file = $request->file('back_image2');
+                    $new_name = rand() . '.' . $file->getClientOriginalExtension();
+                    $file->move(public_path('slider'), $new_name);
+                    $slider->back_image2 = $new_name;
                 }
 
                 if (!empty($request->file()['back_image3'])) {
-
-                    $thumbnailImage = Image::make($request->file()['back_image3']);
-                    $thumbnailPath = public_path().'/slider/';
-                    $originalPath = public_path().'/photos/';
-                    
-                    $thumbnailImage->save($originalPath.time().$request->file()['back_image3']->getClientOriginalName());
-                    // $thumbnailImage->resize(300,350);
-                    $thumbnailImage->save($thumbnailPath.time().$request->file()['back_image3']->getClientOriginalName());
-
-                    $slider->back_image3=time().$request->file()['back_image3']->getClientOriginalName();
+                    $file = $request->file('back_image3');
+                    $new_name = rand() . '.' . $file->getClientOriginalExtension();
+                    $file->move(public_path('slider'), $new_name);
+                    $slider->back_image3 = $new_name;
                 }
+                
                 if (!empty($request->file()['logo_image'])) {
-                    $thumbnailImage = Image::make($request->file()['logo_image']);
-                    $thumbnailPath = public_path().'/slider/';
-                    $originalPath = public_path().'/photos/';
-                    
-                    $thumbnailImage->save($originalPath.time().$request->file()['logo_image']->getClientOriginalName());
-                    $thumbnailImage->resize(300,350);
-                    $thumbnailImage->save($thumbnailPath.time().$request->file()['logo_image']->getClientOriginalName());
 
-                    $slider->logo_image=time().$request->file()['logo_image']->getClientOriginalName();
+                    $file = $request->file('logo_image');
+                    $new_name = rand() . '.' . $file->getClientOriginalExtension();
+                    $file->move(public_path('slider'), $new_name);
+                    $slider->logo_image = $new_name;
                 }
            
         $slider->save();

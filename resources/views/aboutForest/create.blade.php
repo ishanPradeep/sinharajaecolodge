@@ -31,7 +31,7 @@
 
                         <div class="panel-body">
                             <div class="form-group col-md-12" data-aos="">
-                                <textarea class="form-control richTextBox" name="description" id="textarea">
+                                <textarea class="form-control richTextBox" name="description" id="editer">
                                     {{$forest->description}}
                                 </textarea>
                             </div>
@@ -52,7 +52,7 @@
 
 <script type="text/javascript">
     tinymce.init({
-    selector: '#textarea',
+    selector: '#editer',
     height: 400,
     theme: 'modern',
     plugins: [

@@ -15,7 +15,9 @@
         "laravel/tinker": "^1.0",
         "tcg/voyager": "^1.1",
         "unisharp/laravel-filemanager": "~1.8",
-        "ext-gd": "*"
+        "ext-gd": "*",
+        "phpmailer/phpmailer": "~6.0"
+
 
     },
     "require-dev": {

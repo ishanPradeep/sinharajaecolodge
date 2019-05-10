@@ -64,8 +64,8 @@
                 @endif
 
 
-
-               <div class="n-right-w3ls mt-md-4 pt-4">
+                <div class="n-right-w3ls mt-md-4 pt-4">
+                @if (isset($subscribe))
                     <p class="mb-5 text-white text-center"> {{$subscribe->description}}</p>
                     <form action="/newsletter" enctype="multipart/form-data" method="POST">
                         @csrf
@@ -87,6 +87,7 @@
                             </div>
                         </div>
                     </form>
+                @endif
                 </div>
             </div>
         </div>

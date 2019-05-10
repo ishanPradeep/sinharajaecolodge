@@ -55,15 +55,16 @@ class NewsletterController extends Controller
         $email = $request->get('email');
 
         try {
+
             Mail::send('emails.subscribe', ['email' => $email],
                 function ($message) use ($email) {
-                    $message->to($email)->subject("Sinharaja Eco Lodge");
+                    $message->to($email)->subject("Thank you for Subscribing");
+                    $message->cc('pavaroneecolodge@gmail.com')->subject("Thank you for Subscribing");
                 });
             return redirect(route('about-us'))->with('success', 'Thank You! Successfully Sent.');
             
         } catch (\Exception $exception) {
             \Log::error($exception);
-            dd($exception);
             return redirect(route('about-us'))->with('warning', 'Error! Please try again later.');
 
         }

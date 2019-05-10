@@ -57,17 +57,12 @@ class HomePageEventController extends Controller
         $event->description =$request->description;
         
             
-                if (!empty($request->file()['image'])) {
-                    $thumbnailImage = Image::make($request->file()['image']);
-                    $thumbnailPath = public_path().'/thumbnail/';
-                    $originalPath = public_path().'/photos/';
-                    
-                    $thumbnailImage->save($originalPath.time().$request->file()['image']->getClientOriginalName());
-                    // $thumbnailImage->resize(300,350);
-                    $thumbnailImage->save($thumbnailPath.time().$request->file()['image']->getClientOriginalName());
-
-                    $event->image=time().$request->file()['image']->getClientOriginalName();
-                }
+        if (!empty($request->file()['image'])) {
+            $file = $request->file('image');
+            $new_name = rand() . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('thumbnail'), $new_name);
+            $event->image = $new_name;
+        }
                 
                  
         $event->save();

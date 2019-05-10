@@ -56,7 +56,7 @@ class ContactController extends Controller
             Mail::send('emails.contact', ['name' => $name, 'phone' => $phone, 'email' => $email, 'body' => $body],
                 function($message) use ($subject)
                 {
-                    $message->to('ishanpradeepkumara@gmail.com')->subject($subject);
+                    $message->to('pavaroneecolodge@gmail.com')->subject($subject);
                 });
 
             return redirect(url('/contact'))->with('success', 'Thank You! Successfully Sent.');

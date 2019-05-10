@@ -9,7 +9,7 @@
 <head>
 <body style="font-family: sans-serif;padding: 0;margin: 0;">
 <a href="/#home" style="display: table; margin: 15px auto 0px;"><img style="width: 180px;" src="{{asset('image/logo.png')}}"/></a>
-<div style="background-color: rgb(106, 57, 122); color: rgb(255, 255, 255); font-size: 30px; text-align: center; font-weight: bold; padding: 100px 36px;">Welcome new #Sinharaja Eco Lodge member and thank you for subscribing to our newsletter.</div>
+<div style="background-color: rgb(106, 57, 122); color: rgb(255, 255, 255); font-size: 30px; text-align: center; font-weight: bold; padding: 100px 36px;">Welcome new Sinharaja Eco Lodge member and thank you for subscribing to our newsletter.</div>
 
 
 

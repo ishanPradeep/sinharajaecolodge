@@ -146,12 +146,19 @@ Route::get('sliders', 'Voyager\SliderController@show')->name('voyager.sliders.sh
 
 
 
-Route::get('our-agent/index', 'Voyager\OurAgentController@index')->name('voyager.our-agent.index');
+    Route::get('our-agent/index', 'Voyager\OurAgentController@index')->name('voyager.our-agent.index');
     Route::get('our-agent/create', 'Voyager\OurAgentController@create')->name('voyager.our-agent.create');//pk
     Route::post('our-agent', 'Voyager\OurAgentController@store')->name('voyager.our-agent.store');
     Route::get('our-agent/{agent}', 'Voyager\OurAgentController@destroy')->name('voyager.our-agent.destroy');
     Route::get('our-agent/{agent}/edit', 'Voyager\OurAgentController@edit')->name('voyager.our-agent.edit');
     Route::post('our-agent/{agent}/edit', 'Voyager\OurAgentController@update');
+
+
+
+    Route::get('sned-mail/index', 'Voyager\SubscribeController@index')->name('voyager.subscribe.index');
+    Route::get('sned-mail/create', 'Voyager\SubscribeController@create')->name('voyager.sned-mail.create');//pk
+    Route::post('sned-mail', 'Voyager\SubscribeController@store')->name('voyager.sned-mail.store');
+    Route::get('sned-mail', 'Voyager\SubscribeController@show')->name('voyager.sned-mail.show');
 
 
     // Route::get('our-agents/create', 'Voyager\OurAgentController@create')->name('voyager.our-agents.create');
