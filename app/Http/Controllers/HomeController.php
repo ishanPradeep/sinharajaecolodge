@@ -17,6 +17,7 @@ use App\GalleryCamping;
 use App\GalleryEventActivity;
 use App\GalleryFood;
 use App\GalleryWaterfall;
+use App\OurVideo;
 
 
 class HomeController extends Controller
@@ -28,6 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $ourVideo = OurVideo::orderBy('created_at', 'desc')->first();
         $customers=Customer::get();
         $customerSay=CustomerSay::find(1);
         $galleryInfo =GalleryInfo::orderBy('created_at', 'desc')->first();
@@ -35,6 +37,7 @@ class HomeController extends Controller
         $adventure = Adventure::orderBy('created_at', 'desc')->first();
         $us = About::orderBy('created_at', 'desc')->first();
         $slider = Slider::orderBy('created_at', 'desc')->first();
+
         
         $trekking = GalleryTrekking::get();
         foreach ($trekking as $key => $value) {
@@ -62,7 +65,7 @@ class HomeController extends Controller
         }
 
 
-        return view('home',['slider'=>$slider,'adventure'=>$adventure , 'homePageEvent'=>$homePageEvent , 'galleryInfo'=>$galleryInfo , 'customerSay'=>$customerSay ,'customers'=>$customers ,'us'=>$us , 'gallerySlider'=>$gallerySlider]);
+        return view('home',['ourVideo'=>$ourVideo,'slider'=>$slider,'adventure'=>$adventure , 'homePageEvent'=>$homePageEvent , 'galleryInfo'=>$galleryInfo , 'customerSay'=>$customerSay ,'customers'=>$customers ,'us'=>$us , 'gallerySlider'=>$gallerySlider]);
 
 
     }

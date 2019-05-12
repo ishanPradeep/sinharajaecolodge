@@ -142,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
             
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <div style="z-index: 55" class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                 <nav class="link-effect-2" id="link-effect-2">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="/"><span data-hover="Home">Home</span></a></li>
@@ -155,28 +155,43 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <li><a href="/about-sinharaja">About Sinharaja</a></li>
                             </ul>
                         </li>
+
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="abc">abc</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu agile_short_dropdown">
+                                <li><a href="{{ route('gallery-accommodation') }}">Accommodations</a></li>
+                                <li><a href="{{ route('gallery-camping') }}">Campings</a></li>
+                                <li><a href="{{ route('gallery-event_activities') }}">Event & Activities</a></li>
+                                <li><a href="{{ route('gallery-foods') }}">Foods</a></li>
+                                <li><a href="{{ route('gallery-trekking') }}">Trekkings</a></li>
+                                <li><a href="{{ route('gallery-waterfalls') }}">Waterfalls</a></li>
+                            </ul>
+                        </li>
+
+
+
                         <li><a href="/contact"><span data-hover="Mail Us">Mail Us</span></a></li>
                     </ul>
                 </nav>
             </div>
         </nav>
-        <div class="w3_agile_phone">
+        {{-- <div class="w3_agile_phone">
              <ul class="agileinfo_social_icons">
                 <img class="image" src="{{ asset('images/phone-call.png') }}" width="40" style="float: left;" />
                 <p class="phone">{{$slider->contact_number1}}</p>
                 <p class="phone">{{$slider->contact_number2}}</p>
                 <p class="email">{{$slider->email}}</p>
             </ul>
-        </div>
+        </div> --}}
 
-        <div class="container_logo">
-            <div>
-                @if (isset($slider))
-                    <img src="{{ asset('slider/'.$slider->logo_image) }}" width="195" />
-                @else
-                
-                @endif
-            </div>
+
+        <div class="container_logo" style="width:195px">
+            @if (isset($slider))
+                <img src="{{ asset('slider/'.$slider->logo_image) }}" width="195" />
+            @else
+            
+            @endif
         </div>
 
 

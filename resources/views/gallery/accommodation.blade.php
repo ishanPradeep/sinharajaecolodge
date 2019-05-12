@@ -13,13 +13,22 @@
                     <h2 class="tittle mb-xl-5 mb-4 text-center" style="font-size: 225%; font-family: auto;" >Accommodations</h2>
             </div>
 
+            <div>
+                <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
+                    <span class="text-uppercase">{{$aboutAccommodation->title}}</span></h3>
+            </div>
+            <div style="margin-bottom: 6%;margin-top: 6%">
+                    <p class="tittle mb-xl-5 mb-4 text-dark text-center">{{$aboutAccommodation->description}}</p>
+                
+            </div>
+
+
                 @if($accommodations)
                             <?php
                                 foreach ($accommodations as $key => $value) {
                                     ?>
                                     <div class="col-sm-4  agileits_w3layouts_gallery_grid1 w3layouts_gallery_grid1 hover14">
                                         <div class="w3_agile_gallery_effect">
-
                                             <a href="{{ asset('thumbnail/'.$value->image) }}" class="sb" title="{{$value->description}}">
                                                 <figure>
                                                      <figure>

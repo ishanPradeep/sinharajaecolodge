@@ -19,7 +19,6 @@
     <!-- Custom Theme files -->
 
     <link href="{{ asset('css/gallery/bootstrap.css/') }}" type="text/css" rel="stylesheet" media="all">
-
     <link href="{{ asset('css/gallery/style.css/') }}" type="text/css" rel="stylesheet" media="all">
     <link href="{{ asset('css/style.css/') }}" type="text/css" rel="stylesheet" media="all">
     <link href="{{ asset('css/gallery/menufullpage.css/') }}" rel="stylesheet">
@@ -102,9 +101,22 @@
                 <li><a href="/gallery"><span data-hover="Gallery">Gallery</span></a></li>
                 <li><a href="/about-us"><span data-hover="About">About</span></a></li>
                 <li class="active"><a href="/contact"><span data-hover="Mail Us">Mail Us</span></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="abc">abc</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu agile_short_dropdown">
+                        <li><a href="{{ route('gallery-accommodation') }}">Accommodations</a></li>
+                        <li><a href="{{ route('gallery-camping') }}">Campings</a></li>
+                        <li><a href="{{ route('gallery-event_activities') }}">Event & Activities</a></li>
+                        <li><a href="{{ route('gallery-foods') }}">Foods</a></li>
+                        <li><a href="{{ route('gallery-trekking') }}">Trekkings</a></li>
+                        <li><a href="{{ route('gallery-waterfalls') }}">Waterfalls</a></li>
+                    </ul>
+
+
+                </li>
             </ul>
 
-  
+
            
      <!--    <div class="w3_agile_phone">
              <ul class="agileinfo_social_icons">

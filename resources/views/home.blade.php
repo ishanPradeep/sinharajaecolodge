@@ -8,7 +8,6 @@
         <div class="container">
             <div class="col-md-6 w3ls_banner_bottom_left">
                 <div class="w3ls_banner_bottom_left1">
-                    <p>01</p>
                     <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
                 </div>
 
@@ -173,6 +172,43 @@
         </ul>
     </div>
 <!-- //gallery -->
+
+<div style="padding: 10%">
+    <div>
+         <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
+                            <span class="text-uppercase">{{$ourVideo->title}}</span></h3>
+
+    </div>
+    <div style="margin-bottom: 6%;margin-top: 6%">
+            <p class="tittle mb-xl-5 mb-4 text-dark text-center">{{$ourVideo->description}}</p>
+        
+    </div>
+    <div class="row">
+        <video controls width="450" class="col-md-4">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video1)}}"
+                    type="video/webm">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video1)}}"
+                    type="video/mp4">
+        </video>
+
+        <video controls width="450" class="col-md-4">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video2)}}"
+                    type="video/webm">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video2)}}"
+                    type="video/mp4">
+        </video>
+
+        <video controls width="450" class="col-md-4">
+             <source src="{{ asset('thumbnail/'.$ourVideo->video3)}}"
+                    type="video/webm">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video3)}}"
+                    type="video/mp4">
+        </video>
+
+
+    </div>
+</div>
+
 <!-- testimonials -->
     <div class="testimonials">
         <div class="container">

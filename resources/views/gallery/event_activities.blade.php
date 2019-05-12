@@ -16,7 +16,16 @@
                     <h2 class="tittle mb-xl-5 mb-4 text-center" style="font-size: 225%; font-family: auto;" >Event & Activities</h2>
             </div>
 
-                @if($eventActivity)
+            <div>
+                <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
+                    <span class="text-uppercase">{{$aboutEventActivity->title}}</span></h3>
+            </div>
+            <div style="margin-bottom: 6%;margin-top: 6%">
+                    <p class="tittle mb-xl-5 mb-4 text-dark text-center">{{$aboutEventActivity->description}}</p>
+                
+            </div>
+
+                            @if($eventActivity)
                             <?php
                                 foreach ($eventActivity as $key => $value) {
                                     ?>

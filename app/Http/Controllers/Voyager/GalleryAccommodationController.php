@@ -10,6 +10,7 @@ use Image;
 use App\GalleryAccommodation;
 use Illuminate\Http\Request;
 
+
 class GalleryAccommodationController extends Controller
 {
         /**

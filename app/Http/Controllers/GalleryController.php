@@ -18,6 +18,13 @@ use App\GalleryAccommodation;
 use App\GalleryTrekking;
 use App\GalleryCamping;
 use App\About;
+use App\AboutAccommodation;
+use App\AboutCamping;
+use App\AboutEventActivity;
+use App\AboutFood;
+use App\AboutForest;
+use App\AboutTrekking;
+use App\AboutWaterfall;
 
 class GalleryController extends Controller
 {
@@ -43,6 +50,8 @@ class GalleryController extends Controller
         $galleryTrekking=GalleryTrekking::orderBy('created_at', 'desc')->first();
         $galleryWaterfall=GalleryWaterfall::orderBy('created_at', 'desc')->first();
 
+
+
         return view('gallery/gallery',['eventActivity' =>$eventActivity ,'galleryWaterfall' =>$galleryWaterfall ,'galleryAccommodation' =>$galleryAccommodation ,'galleryCamping' =>$galleryCamping ,'galleryFood' =>$galleryFood ,'galleryTrekking' =>$galleryTrekking ,'slider'=>$slider,'adventure'=>$adventure , 'homePageEvent'=>$homePageEvent , 'galleryInfo'=>$galleryInfo , 'customerSay'=>$customerSay ,'customers'=>$customers,'us'=>$us]);
 
         
@@ -50,45 +59,56 @@ class GalleryController extends Controller
     }
 
     public function event_activities(){
+        $aboutEventActivity=AboutEventActivity::orderBy('created_at', 'desc')->first();
         $us = About::orderBy('created_at', 'desc')->first();
         $eventActivity = GalleryEventActivity::get();
         $slider = Slider::orderBy('created_at', 'desc')->first();
-        return view('gallery/event_activities',['slider'=>$slider, 'eventActivity'=>$eventActivity,'us'=>$us]);
+        return view('gallery/event_activities',['slider'=>$slider, 'aboutEventActivity'=>$aboutEventActivity, 'eventActivity'=>$eventActivity,'us'=>$us]);
     }
 
     public function waterfalls(){
+        $aboutWaterfall=AboutWaterfall::orderBy('created_at', 'desc')->first();
+
         $us = About::orderBy('created_at', 'desc')->first();
         $waterfalls = GalleryWaterfall::get();
         $slider = Slider::orderBy('created_at', 'desc')->first();        
-        return view('gallery/waterfalls',['slider'=>$slider, 'waterfalls'=>$waterfalls,'us'=>$us]);
+        return view('gallery/waterfalls',['slider'=>$slider,'aboutWaterfall'=>$aboutWaterfall ,'waterfalls'=>$waterfalls,'us'=>$us]);
     }
 
     public function foods(){
+        $aboutFood=AboutFood::orderBy('created_at', 'desc')->first();
+
         $us = About::orderBy('created_at', 'desc')->first();
         $foods = GalleryFood::get();
         $slider = Slider::orderBy('created_at', 'desc')->first();        
-        return view('gallery/foods',['slider'=>$slider, 'foods'=>$foods,'us'=>$us]);
+        return view('gallery/foods',['slider'=>$slider, 'aboutFood'=>$aboutFood ,'foods'=>$foods,'us'=>$us]);
     }
 
+
     public function accommodation(){
+        $aboutAccommodation= AboutAccommodation::orderBy('created_at', 'desc')->first();
+
         $us = About::orderBy('created_at', 'desc')->first();
         $accommodation = GalleryAccommodation::get();
         $slider = Slider::orderBy('created_at', 'desc')->first();        
-        return view('gallery/accommodation',['slider'=>$slider, 'accommodations'=>$accommodation,'us'=>$us]);
+        return view('gallery/accommodation',['slider'=>$slider, 'aboutAccommodation'=>$aboutAccommodation, 'accommodations'=>$accommodation,'us'=>$us]);
     }
 
     public function trekking(){
+
+        $aboutTrekking=AboutTrekking::orderBy('created_at', 'desc')->first();
         $us = About::orderBy('created_at', 'desc')->first();
         $trekkings = GalleryTrekking::get();
         $slider = Slider::orderBy('created_at', 'desc')->first();        
-        return view('gallery/trekking',['slider'=>$slider, 'trekkings'=>$trekkings,'us'=>$us]);
+        return view('gallery/trekking',['slider'=>$slider,'aboutTrekking'=>$aboutTrekking, 'trekkings'=>$trekkings,'us'=>$us]);
     }
 
     public function camping(){
+        $aboutCamping=AboutCamping::orderBy('created_at', 'desc')->first();
         $us = About::orderBy('created_at', 'desc')->first();
         $campings = GalleryCamping::get();
         $slider = Slider::orderBy('created_at', 'desc')->first();        
-        return view('gallery/camping',['slider'=>$slider, 'campings'=>$campings,'us'=>$us]);
+        return view('gallery/camping',['slider'=>$slider, 'aboutCamping'=>$aboutCamping, 'campings'=>$campings,'us'=>$us]);
     }
 
 

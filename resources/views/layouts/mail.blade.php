@@ -50,26 +50,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li><a href="/"><span data-hover="Home">Home</span></a></li>
                         <li><a href="/gallery"><span data-hover="Gallery">Gallery</span></a></li>
 <!--                         <li><a href="services.html"><span data-hover="Services">Services</span></a></li>
- -->                        <li class="dropdown">
+ -->                    <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="About Us">About Us</span> <b class="caret"></b></a>
                             <ul class="dropdown-menu agile_short_dropdown">
                                 <li><a href="/about-us">About Us</a></li>
                                 <li><a href="/about-sinharaja">About Sinharaja</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="About Us">About Us</span> <b class="caret"></b></a>
+                            <ul class="dropdown-menu agile_short_dropdown">
+                                <li><a href="{{ route('gallery-accommodation') }}">Accommodations</a></li>
+                                <li><a href="{{ route('gallery-camping') }}">Campings</a></li>
+                                <li><a href="{{ route('gallery-event_activities') }}">Event & Activities</a></li>
+                                <li><a href="{{ route('gallery-foods') }}">Foods</a></li>
+                                <li><a href="{{ route('gallery-trekking') }}">Trekkings</a></li>
+                                <li><a href="{{ route('gallery-waterfalls') }}">Waterfalls</a></li>
+                            </ul>
+                        </li>
+
+
                         <li class="active"><a href="/contact"><span data-hover="Mail Us">Mail Us</span></a></li>
                     </ul>
                 </nav>
             </div>
            
-        <div class="w3_agile_phone">
+       {{--  <div class="w3_agile_phone">
              <ul class="agileinfo_social_icons">
                 <img class="image" src="{{ asset('images/phone-call.png') }}" width="40" style="float: left;" />
                 <p class="phone">{{$slider->contact_number1}}</p>
                 <p class="phone">{{$slider->contact_number2}}</p>
                 <p class="email">{{$slider->email}}</p>
             </ul>
-        </div>
+        </div> --}}
 
 
         </nav>
