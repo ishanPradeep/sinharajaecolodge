@@ -114,8 +114,7 @@
                             <span>{{preg_replace('/\W\w+\s*(\W*)$/', '$1', $homePageEvent->title)}}</span>
                             {{$split[count($split)-1]}}
                     </h3>
-
-                    <p>{{$homePageEvent->description}}</p>
+                    <p>{!! nl2br(e($homePageEvent->description)) !!}</p>
                 @else
 
                 @endif
