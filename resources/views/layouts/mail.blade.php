@@ -11,7 +11,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //custom-theme -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/about/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
@@ -49,16 +49,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <ul class="nav navbar-nav">
                         <li><a href="/"><span data-hover="Home">Home</span></a></li>
                         <li><a href="/gallery"><span data-hover="Gallery">Gallery</span></a></li>
-<!--                         <li><a href="services.html"><span data-hover="Services">Services</span></a></li>
- -->                    <li class="dropdown">
+                        <li><a href="/about-us"><span data-hover="About">About</span></a></li>
+
+                   {{--  <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="About Us">About Us</span> <b class="caret"></b></a>
                             <ul class="dropdown-menu agile_short_dropdown">
                                 <li><a href="/about-us">About Us</a></li>
                                 <li><a href="/about-sinharaja">About Sinharaja</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="About Us">About Us</span> <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="Attractions">Attractions</span> <b class="caret"></b></a>
                             <ul class="dropdown-menu agile_short_dropdown">
                                 <li><a href="{{ route('gallery-accommodation') }}">Accommodations</a></li>
                                 <li><a href="{{ route('gallery-camping') }}">Campings</a></li>
@@ -70,7 +71,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </li>
 
 
-                        <li class="active"><a href="/contact"><span data-hover="Mail Us">Mail Us</span></a></li>
+                        <li class="active"><a href="/contact"><span data-hover="Packages">Packages</span></a></li>
                     </ul>
                 </nav>
             </div>

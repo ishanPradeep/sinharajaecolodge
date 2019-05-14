@@ -8,7 +8,7 @@ use App\Slider;
 use App\Subscribe;
 use App\OurAgent;
 use App\AboutForest;
-
+use App\Contact;
 class AboutController extends Controller
 {
     /**
@@ -27,7 +27,9 @@ class AboutController extends Controller
         $subscribe =Subscribe::orderBy('created_at', 'desc')->first();
         $us = About::orderBy('created_at', 'desc')->first();
         $agents = OurAgent::limit(4)->orderBy('updated_at', 'desc')->get();
-        return view('about/about-us',['slider'=>$slider ,'us' =>$us , 'subscribe'=>$subscribe , 'agents'=>$agents]);
+        $contact=Contact::orderBy('created_at', 'desc')->first();
+
+        return view('about/about-us',['slider'=>$slider ,'us' =>$us , 'contact'=>$contact,'subscribe'=>$subscribe , 'agents'=>$agents]);
     }
 
     public function getAboutSinharaja(){

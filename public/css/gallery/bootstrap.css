@@ -1,4 +1,4 @@
-!
+/*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -109,15 +109,7 @@ ul,
 dl {
   margin-top: 0;
   margin-bottom: 1rem;
-
 }
-
-
-li{
-  float: left;
-}
-
-
 
 ol ol,
 ul ul,
@@ -560,14 +552,6 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-
-
-
-
-
-
-
-
 
 .container {
   width: 100%;
@@ -3174,21 +3158,19 @@ tbody.collapse.show {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0;
-  font-size: 14px;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
-  -webkit-background-clip: padding-box;
-          background-clip: padding-box;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, .15);
-  border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
 }
+
 .dropup .dropdown-menu {
   margin-top: 0;
   margin-bottom: 0.125rem;
@@ -4003,10 +3985,10 @@ tbody.collapse.show {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
+  flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  width: 46%;
 }
 
 .navbar-nav .nav-link {
@@ -4025,7 +4007,7 @@ tbody.collapse.show {
   padding-bottom: 0.5rem;
 }
 
-/*.navbar-collapse {
+.navbar-collapse {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   -webkit-box-flex: 1;
@@ -4034,7 +4016,7 @@ tbody.collapse.show {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}*/
+}
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -4103,13 +4085,13 @@ tbody.collapse.show {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
-/*  .navbar-expand-sm .navbar-collapse {
+  .navbar-expand-sm .navbar-collapse {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
-  }*/
+  }
   .navbar-expand-sm .navbar-toggler {
     display: none;
   }
@@ -4159,13 +4141,13 @@ tbody.collapse.show {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
-/*  .navbar-expand-md .navbar-collapse {
+  .navbar-expand-md .navbar-collapse {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
-  }*/
+  }
   .navbar-expand-md .navbar-toggler {
     display: none;
   }
@@ -4215,13 +4197,13 @@ tbody.collapse.show {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
- /* .navbar-expand-lg .navbar-collapse {
+  .navbar-expand-lg .navbar-collapse {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
-  }*/
+  }
   .navbar-expand-lg .navbar-toggler {
     display: none;
   }
@@ -4271,13 +4253,13 @@ tbody.collapse.show {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
-/*  .navbar-expand-xl .navbar-collapse {
+  .navbar-expand-xl .navbar-collapse {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
-  }*/
+  }
   .navbar-expand-xl .navbar-toggler {
     display: none;
   }
@@ -4330,13 +4312,13 @@ tbody.collapse.show {
   flex-wrap: nowrap;
 }
 
-/*.navbar-expand .navbar-collapse {
+.navbar-expand .navbar-collapse {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
-}*/
+}
 
 .navbar-expand .navbar-toggler {
   display: none;
@@ -8978,9 +8960,9 @@ a.text-dark:hover, a.text-dark:focus {
   .badge {
     border: 1px solid #000;
   }
-  /*.table {
+  .table {
     border-collapse: collapse !important;
-  }*/
+  }
   .table td,
   .table th {
     background-color: #fff !important;
@@ -8990,4 +8972,4 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #ddd !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map 
+/*# sourceMappingURL=bootstrap.css.map */

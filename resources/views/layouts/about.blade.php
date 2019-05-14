@@ -100,9 +100,8 @@
                 <li><a href="/"><span data-hover="Home">Home</span></a></li>
                 <li><a href="/gallery"><span data-hover="Gallery">Gallery</span></a></li>
                 <li><a href="/about-us"><span data-hover="About">About</span></a></li>
-                <li class="active"><a href="/contact"><span data-hover="Mail Us">Mail Us</span></a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="abc">abc</span> <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span data-hover="Attractions">Attractions</span> <b class="caret"></b></a>
                     <ul class="dropdown-menu agile_short_dropdown">
                         <li><a href="{{ route('gallery-accommodation') }}">Accommodations</a></li>
                         <li><a href="{{ route('gallery-camping') }}">Campings</a></li>
@@ -111,9 +110,9 @@
                         <li><a href="{{ route('gallery-trekking') }}">Trekkings</a></li>
                         <li><a href="{{ route('gallery-waterfalls') }}">Waterfalls</a></li>
                     </ul>
-
-
                 </li>
+                <li class="active"><a href="/contact"><span data-hover="Packages">Packages</span></a></li>
+
             </ul>
 
 

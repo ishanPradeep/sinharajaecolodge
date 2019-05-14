@@ -10,68 +10,6 @@ body {
 	background: #fff;
 }
 
-.badge-primary {
-	background-color: #03a9f4;
-}
-.badge-success {
-	background-color: #8bc34a;
-}
-.badge-warning {
-	background-color: #ffc107;
-}
-.badge-danger {
-	background-color: #e51c23;
-}
-
-
-.w3_agile_social_icons{
-	position:absolute;
-	bottom:8%;
-	right:10%;
-}
-.agileinfo_social_icons li{
-	display:inline-block;
-}
-.agileinfo_social_icons li a{
-	width: 40px;
-    height: 40px;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-}
-.agileinfo_social_icons li a:hover{
-	color:#fff;
-}
-.agileinfo_social_icons li a i{
-	line-height:2.7em;
-}
-.w3_agileits_facebook{
-	color: #3b5998;
-}
-.w3_agileits_facebook:hover{
-	background: #3b5998;
-}
-
-
-.agoda:hover{
-	background: #416f53;
-}
-
-
-.color_tripadvisor:hover{
-	background: #1e3317;
-}
-.booking:hover{
-	background: #00243e;
-}
-
-
-
-
-
-
 body a,
 .slider-info a {
 	transition: 0.5s all;
@@ -103,9 +41,7 @@ p {
 ul {
 	margin: 0;
 	padding: 0;
-
 }
-
 
 ul {
 	list-style-type: none;
@@ -424,17 +360,12 @@ img.img-fluid.img-posi-2 {
 }
 
 .block-text h6 {
-	color: #000000; 
+	color: #000000;
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: capitalize;
 	line-height: 21px;
 	font-family: 'Raleway', sans-serif;
-}
-
-.error-block{
-	color: #920e0e;
-	margin-left: 34px;
 }
 
 .mark {
@@ -595,7 +526,7 @@ a.button-w3ls {
 
 /* //blogs */
 section.newsletter_right_w3agile{
-    /*background: url(../images/6.jpg) no-repeat center;*/
+    background: url(../images/bg4.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -629,22 +560,6 @@ ul.links-nav li a {
     letter-spacing: 1px;
     font-size: 0.9em;
 }
-
-
-/*.w3_agile_phone{
-	background-color: #ebe5fb !important;
-    float: right !important;
-    margin: 2.3em 77% 0 !important;
-    text-align: center !important;
-    color: #1a9a30 !important;
-    border: 2px solid #47a0af !important;
-  	padding: 10px !important;
-  	border-radius: 25px !important;
-}
-.phone{
-	font-size: 20px !important;
-}*/
-
 
 ul.links-nav li a.active,
 ul.links-nav li a:hover {
