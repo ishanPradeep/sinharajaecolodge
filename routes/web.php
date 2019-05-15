@@ -177,6 +177,12 @@ Route::get('sliders', 'Voyager\SliderController@show')->name('voyager.sliders.sh
     Route::get('our-videos', 'Voyager\OurVideoController@show')->name('voyager.our-videos.show');
 
 
+    Route::get('packages/index', 'Voyager\PackageController@index')->name('voyager.packages.index');
+    Route::get('packages/create', 'Voyager\PackageController@create')->name('voyager.packages.create');
+    Route::post('packages', 'Voyager\PackageController@store')->name('voyager.packages.store');
+    Route::get('packages', 'Voyager\PackageController@show')->name('voyager.packages.show');
+
+
 
 
     Route::get('about-forests.index', 'Voyager\AboutForestController@create')->name('voyager.about-forests.index');
