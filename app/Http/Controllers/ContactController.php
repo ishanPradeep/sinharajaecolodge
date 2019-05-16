@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Mail;
 use App\Slider;
 use App\About;
+use App\Package;
+
 class ContactController extends Controller
 {
     /**
@@ -18,10 +20,10 @@ class ContactController extends Controller
     {        
 
         $slider = Slider::orderBy('created_at', 'desc')->first();
-        $contact=Contact::orderBy('created_at', 'desc')->first();
+        $package =Package::orderBy('created_at', 'desc')->first();
+        // $contact=Contact::orderBy('created_at', 'desc')->first();
         $us = About::orderBy('created_at', 'desc')->first();
-
-        return view('contact/mail',['slider'=>$slider,'contact'=>$contact,'us'=>$us]);
+        return view('package/show',['slider'=>$slider, 'package' => $package, 'us' =>$us ]);
     }
 
     /**
