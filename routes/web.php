@@ -20,9 +20,9 @@ Route::get('/', 'HomeController@index');
 Route::get('/about-us', 'AboutController@getAboutUs')->name('about-us');
 Route::get('/about-sinharaja', 'AboutController@getAboutSinharaja')->name('about-sinharaja');
 Route::get('/gallery', 'GalleryController@index')->name('gallery');
-Route::get('contact', 'ContactController@index')->name('contact');
+Route::get('/contact', 'ContactController@index')->name('contact');
 
-Route::Post('contact', 'ContactController@sendEmail');
+Route::Post('/contact', 'ContactController@sendEmail');
 
 
 Route::get('/gallery/event_activities', 'GalleryController@event_activities')->name('gallery-event_activities');
