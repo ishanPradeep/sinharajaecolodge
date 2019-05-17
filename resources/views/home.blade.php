@@ -2,6 +2,23 @@
 @section('home')
 
 
+<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+
+
+
 <!-- banner-bottom -->  
 
    <div class="banner-bottom">
@@ -120,7 +137,8 @@
                 @endif
             </div>
             <div class="col-md-6 w3layouts_register_right" style="margin-top: 10%;">
-                <iframe style="width: 100%; height: 400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345275!2d-118.69191921441556!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos+Angeles%2C+CA%2C+USA!5e0!3m2!1sen!2sin!4v1522474296007" allowfullscreen></iframe>
+
+                <iframe style="width: 100%; height: 400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156067.97738200496!2d80.34552679996301!3d6.465573631402424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2e21850db2f76db6!2sSinharaja+Rain+Forest+Entrance!5e0!3m2!1sen!2slk!4v1558059646919!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
             </div>
             <div class="clearfix"> </div>
@@ -210,6 +228,11 @@
     </div>
 </div>
 
+
+
+
+
+
 <!-- testimonials -->
     <div class="testimonials">
         <div class="container">
@@ -242,7 +265,7 @@
                                     <h5>{{$customer->country}}</h5>
                                     <div class="w3l_testimonial_grid_pos">
 
-                                        <img src={{ asset('thumbnail/'.$customer->image) }} class="img-responsive" />
+                                <img src={{ asset('thumbnail/'.$customer->image) }} class='img-responsive' />
                                     </div>
                                 </div>
                             </div>
@@ -258,3 +281,4 @@
 <!-- //testimonials -->
 
 @endsection
+
