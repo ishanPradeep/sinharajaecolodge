@@ -38,7 +38,8 @@
                         </div>
 
                         <div class="form-group col-md-5" data-aos="">
-                        	<label class="w3-input"  style="font: -webkit-mini-control">{{$package->b_b_description}}</label>
+                        	<label class="w3-input"  style="font: -webkit-mini-control">
+                                {!! nl2br(e($package->b_b_description)) !!}</label>
                             <br>
                         </div>
                    
@@ -67,7 +68,8 @@
                         </div>
 
                         <div class="form-group col-md-5" data-aos="">
-                        	<label class="w3-input"  style="font: -webkit-mini-control">{{$package->h_b_description}}</label>
+                        	<label class="w3-input"  style="font: -webkit-mini-control">
+                                {!! nl2br(e($package->h_b_description)) !!}</label>
                              <br>
 
                         </div>
@@ -93,7 +95,8 @@
                         </div>
 
                         <div class="form-group col-md-5" data-aos="">
-                        	<label class="w3-input"  style="font: -webkit-mini-control">{{$package->f_b_description}}</label>
+                        	<label class="w3-input"  style="font: -webkit-mini-control">
+                                {!! nl2br(e($package->f_b_description)) !!}</label>
                              <br><br><br><br>
                         </div>
                             
@@ -103,28 +106,33 @@
 
                         <label class="awesome form-group col-md-12">Packages ( night stay )</label>
                         <div class="form-group col-md-12" data-aos="">
-                        	<label class="w3-input"  style="font: -webkit-mini-control">{{$package->packages_night_stay}}</label>
+                        	<label class="w3-input"  style="font: -webkit-mini-control">
+                                {!! nl2br(e($package->packages_night_stay)) !!}</label>
                              <br><br><br>
 
                         </div>
 
                         <label class="awesome form-group col-md-12">Day Out Packages</label>
                         <div class="form-group col-md-12" data-aos="">
-                        	<label class="w3-input"  style="font: -webkit-mini-control">{{$package->day_out_packages}}</label>
+                        	<label class="w3-input"  style="font: -webkit-mini-control">
+                                {!! nl2br(e($package->day_out_packages)) !!}</label>
                              <br><br><br>
 
                         </div>
 
                         <label class="awesome form-group col-md-12">Swimming Areas</label>
                         <div class="form-group col-md-12" data-aos="">
-                        	<label class="w3-input"  style="font: -webkit-mini-control">{{$package->swimming_areas}}</label>
+                        	<label class="w3-input"  style="font: -webkit-mini-control">
+                                {!! nl2br(e($package->swimming_areas)) !!}</label>
                              <br><br><br>
 
                         </div>
 
                         <label class="awesome form-group col-md-12">Room Facilities</label>
                         <div class="form-group col-md-12" data-aos="">
-                        	<label class="w3-input"  style="font: -webkit-mini-control">{{$package->swimming_areas}}</label>
+                        	<label class="w3-input"  style="font: -webkit-mini-control">
+                                {!! nl2br(e($package->room_facilities)) !!}
+                            </label>
                              <br><br><br>
 
                         </div>
