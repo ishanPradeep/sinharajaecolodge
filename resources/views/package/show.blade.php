@@ -4,10 +4,6 @@
 
 	<div class="courses">
 		<div class="container">
-				
-
-
-
                     <div class="panel-body">
 						 <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
                         <span class="text-uppercase">Rates</span>For Foreigners</h3><br>

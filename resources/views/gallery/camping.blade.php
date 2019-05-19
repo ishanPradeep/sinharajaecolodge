@@ -17,7 +17,8 @@
                     <span class="text-uppercase">{{$aboutCamping->title}}</span></h3>
             </div>
             <div style="margin-bottom: 6%;margin-top: 6%">
-                    <p class="tittle mb-xl-5 mb-4 text-dark text-center">{{$aboutCamping->description}}</p>
+                    <p class="tittle mb-xl-5 mb-4 text-dark text-center">
+                        {!! nl2br(e($aboutCamping->description)) !!}</p>
                 
             </div>
 

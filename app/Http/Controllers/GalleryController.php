@@ -43,12 +43,12 @@ class GalleryController extends Controller
         $adventure = Adventure::orderBy('created_at', 'desc')->first();
         $slider = Slider::orderBy('created_at', 'desc')->first();
 
-        $eventActivity = GalleryEventActivity::orderBy('created_at', 'desc')->first();
-        $galleryAccommodation=GalleryAccommodation::orderBy('created_at', 'desc')->first();
-        $galleryCamping=GalleryCamping::orderBy('created_at', 'desc')->first();
-        $galleryFood=GalleryFood::orderBy('created_at', 'desc')->first();
-        $galleryTrekking=GalleryTrekking::orderBy('created_at', 'desc')->first();
-        $galleryWaterfall=GalleryWaterfall::orderBy('created_at', 'desc')->first();
+        $eventActivity = GalleryEventActivity::get();
+        $galleryAccommodation=GalleryAccommodation::get();
+        $galleryCamping=GalleryCamping::get();
+        $galleryFood=GalleryFood::get();
+        $galleryTrekking=GalleryTrekking::get();
+        $galleryWaterfall=GalleryWaterfall::get();
 
 
 
