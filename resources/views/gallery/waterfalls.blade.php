@@ -13,16 +13,12 @@
                 <h4 class="tittle mb-xl-5 mb-4 text-center">
                     {{-- <span class="text-uppercase">Gallery</span>--}}
                 </h4>  
-                    <h2 class="tittle mb-xl-5 mb-4 text-center" style="font-size: 225%; font-family: auto;" >Waterfalls</h2>
+                    <h2 class="tittle mb-xl-5 mb-4 text-center" style="font-size: 225%; font-family: auto;" >{{$aboutWaterfall->title}}</h2>
             </div>
 
-            <div>
-                <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
-                    <span class="text-uppercase">{{$aboutWaterfall->title}}</span></h3>
-            </div>
             <div style="margin-bottom: 6%;margin-top: 6%">
-                    <p class="tittle mb-xl-5 mb-4 text-dark text-center">{{$aboutWaterfall->description}}</p>
-                
+                    <p class="tittle mb-xl-5 mb-4 text-dark text-center">
+                        {!! nl2br(e($aboutWaterfall->description)) !!}</p>                        
             </div>
 
                 @if($waterfalls)
