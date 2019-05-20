@@ -4,6 +4,11 @@
 
 <title>Sinharaja Eco Lodge</title>
 <!-- custom-theme -->
+@if(! empty($meta_keywords))
+    <meta name="meta_keywords" content="{{$meta_keywords}}">
+@endif
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Edifying Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 

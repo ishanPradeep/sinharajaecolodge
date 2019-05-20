@@ -64,8 +64,11 @@ class HomeController extends Controller
             $gallerySlider[]=$value->image;
         }
 
+        $meta_title= "pavarone eco lodge";
+        $meta_description= "Pavarone Eco Lodge Sinharajaprovides comfortable accommodation in the outskirts of the Sinharaja rainforest.";
+        $meta_keywords= "pavarone,gallery-eco-lodge.html,http://sinharajaecolodge.com/accomodation.html,http://sinharajaecolodge.com/accomodation.html,www.sinharajaecolodge.com/gallery-eco-lodge.html,restaurants,sinharaja,sinharaja eco lodge";
 
-        return view('home',['ourVideo'=>$ourVideo,'slider'=>$slider,'adventure'=>$adventure , 'homePageEvent'=>$homePageEvent , 'galleryInfo'=>$galleryInfo , 'customerSay'=>$customerSay ,'customers'=>$customers ,'us'=>$us , 'gallerySlider'=>$gallerySlider]);
+        return view('home',['ourVideo'=>$ourVideo,'slider'=>$slider,'adventure'=>$adventure , 'homePageEvent'=>$homePageEvent , 'galleryInfo'=>$galleryInfo , 'customerSay'=>$customerSay ,'customers'=>$customers ,'us'=>$us , 'gallerySlider'=>$gallerySlider, 'meta_title'=>$meta_title , 'meta_description'=>$meta_description , 'meta_keywords'=>$meta_keywords  ]);
 
 
     }
