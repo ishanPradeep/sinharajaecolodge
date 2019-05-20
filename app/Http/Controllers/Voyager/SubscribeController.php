@@ -51,7 +51,7 @@ class SubscribeController extends Controller
             
         ]); 
 
-        $subscribe = Subscribe::find($request->ig);
+        $subscribe = Subscribe::orderBy('created_at', 'desc')->first();
         $subscribe->title=$request->title;
         $subscribe->description=$request->description;
         $image= $request->file();

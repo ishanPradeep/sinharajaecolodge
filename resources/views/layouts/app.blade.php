@@ -360,7 +360,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="/">Home</a></li>
                             <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="/gallery">Gallery</a></li>
                             <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="/about-us">About Us</a></li>
-                            <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="/contact">Mail Us</a></li>
+                            <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="#">Attractions</a></li>
+                            <li><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><a href="/contact">Packages</a></li>
                         </ul>
                     </div>
                     <div class="clearfix"> </div>

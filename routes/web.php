@@ -156,8 +156,8 @@ Route::get('sliders', 'Voyager\SliderController@show')->name('voyager.sliders.sh
 
 
     Route::get('sned-mail/index', 'Voyager\SubscribeController@index')->name('voyager.subscribe.index');
-    Route::get('sned-mail/create', 'Voyager\SubscribeController@create')->name('voyager.sned-mail.create');//pk
-    Route::post('sned-mail', 'Voyager\SubscribeController@store')->name('voyager.sned-mail.store');
+    Route::get('sned-mail/create', 'Voyager\SubscribeController@create')->name('voyager.sned-mail.create');
+    Route::post('sned-mail/create', 'Voyager\SubscribeController@store')->name('voyager.sned-mail.store');
     Route::get('sned-mail', 'Voyager\SubscribeController@show')->name('voyager.sned-mail.show');
 
 
