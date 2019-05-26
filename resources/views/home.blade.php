@@ -86,17 +86,17 @@
                         <ul class="slides">
                             <li>    
                                 <div class="agileits_w3layouts_banner_bottom_grid">
-                                        <img src="{{ asset('thumbnail/'.$adventure->image1) }}" alt=" " class="img-responsive" style=" width: 400px; height: 450px;" />
+                                        <img src="{{ asset('thumbnail/'.$adventure->image1) }}" alt=" " class="img-responsive addventure" />
                                 </div>
                             </li>
                             <li>    
                                 <div class="agileits_w3layouts_banner_bottom_grid">
-                                        <img src="{{ asset('thumbnail/'.$adventure->image2) }}" alt=" " class="img-responsive" style=" width: 400px; height: 450px;" />
+                                        <img src="{{ asset('thumbnail/'.$adventure->image2) }}" alt=" " class="img-responsive addventure" />
                                 </div>
                             </li>
                             <li>    
                                 <div class="agileits_w3layouts_banner_bottom_grid">
-                                        <img src="{{ asset('thumbnail/'.$adventure->image3) }}" alt=" " class="img-responsive" style=" width: 400px; height: 450px;" />
+                                        <img src="{{ asset('thumbnail/'.$adventure->image3) }}" alt=" " class="img-responsive addventure" />
                                 </div>
                             </li>
                         </ul>
@@ -171,7 +171,7 @@
     </div>
 <!-- //gallery-top -->
 <!-- gallery -->
-    <div class="gallery">
+   {{--  <div class="gallery">
         <ul id="flexiselDemo1"   style="height: 224px;"> 
             @foreach($gallerySlider as $value)
 
@@ -189,7 +189,7 @@
             </li>
             @endforeach
         </ul>
-    </div>
+    </div> --}}
 <!-- //gallery -->
 
 <div style="padding: 10%">
@@ -203,21 +203,21 @@
         
     </div>
     <div class="row">
-        <video controls width="450" class="col-md-4">
+        <video controls width="450" class="col-md-4 video-content">
             <source src="{{ asset('thumbnail/'.$ourVideo->video1)}}"
                     type="video/webm">
             <source src="{{ asset('thumbnail/'.$ourVideo->video1)}}"
                     type="video/mp4">
         </video>
 
-        <video controls width="450" class="col-md-4">
+        <video controls width="450" class="col-md-4 video-content">
             <source src="{{ asset('thumbnail/'.$ourVideo->video2)}}"
                     type="video/webm">
             <source src="{{ asset('thumbnail/'.$ourVideo->video2)}}"
                     type="video/mp4">
         </video>
 
-        <video controls width="450" class="col-md-4">
+        <video controls width="450" class="col-md-4 video-content">
              <source src="{{ asset('thumbnail/'.$ourVideo->video3)}}"
                     type="video/webm">
             <source src="{{ asset('thumbnail/'.$ourVideo->video3)}}"

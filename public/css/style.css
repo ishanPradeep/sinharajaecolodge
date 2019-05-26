@@ -75,6 +75,10 @@ img.img-fluid.img-posi-2 {
 .w3l_testimonial_grid p{
 	height: 308px;
 }
+nav.navbar.navbar-default {
+    background: none;
+    padding:2em 5em 6px;
+}
 }
 
 /*.banner1{
@@ -2051,22 +2055,19 @@ h3.agileits-icons-title {
     text-align: center;
     word-wrap: break-word;
 }
+.addventure{
+	width: 400px; height: 450px;
+}
+
 @media (max-width:1080px){
 	.icon-box {
 		width: 33.33%;
 	}
-}
-@media (max-width:991px){
-	h3.agileits-icons-title {
-		font-size: 28px;
-	}
-	h3.icon-subheading {
-		font-size: 22px;
-	}
-	.icon-box {
-		width: 50%;
+	.addventure{
+		width: 400px; height: 450px;
 	}
 }
+
 @media (max-width:768px){
 	h3.agileits-icons-title {
 		font-size: 28px;
@@ -2288,11 +2289,8 @@ ol {
 h2.typoh2{
     margin: 0 0 10px;
 }
-@media (max-width:991px){
-	.grid_3 {
-		margin-bottom: 0;
-	}
-}
+
+
 @media (max-width:768px){
 	.grid_5 {
 		padding: 0 0 1em;
@@ -2552,6 +2550,9 @@ h2.typoh2{
 	}
 }
 @media (max-width: 1024px){
+	.address-right{
+		margin-left: 20%;
+	}
 	.navbar-right {
 		margin: 1em 0 0 2em;
 	}
@@ -2632,7 +2633,81 @@ h2.typoh2{
 		padding: 3.95em;
 	}
 }
+
+
 @media (max-width: 991px){
+.flex-control-nav {
+    top: 389px;
+    left: 38.2% !important;
+}
+
+.flex-direction-nav .flex-prev {
+	display: none;
+}
+.flex-direction-nav .flex-next {
+    display: none;
+}
+
+.home-page-event{
+	height: 893px;
+    margin-top: 81px;
+}
+.video-content{
+	width: 580px;
+	margin-left:135px;
+}
+.about-w3layouts-right{
+	width: 40% !important;
+}
+
+
+.w3ls_banner_bottom_left1 span{
+	display:block;
+	font-size:1em;
+	color:#999;
+	margin:1em 0 0;
+}
+.w3ls_banner_bottom_right1{
+	float: right;
+    width: 78%;
+}
+.w3ls_banner_bottom_right1 h2{
+	font-size: 1.5em;
+    color: #212121;
+    line-height: 1.5em;
+    text-transform: capitalize;
+}
+.w3ls_banner_bottom_right1 h2 span{
+	color:#0accff;
+}
+.w3ls_banner_bottom_right1 p{
+	margin: 1em 0 3em;
+    color: #999;
+    line-height: 2em;
+}
+	.grid_3 {
+		margin-bottom: 0;
+	}
+	
+	h3.agileits-icons-title {
+		font-size: 28px;
+	}
+	h3.icon-subheading {
+		font-size: 22px;
+	}
+	.icon-box {
+		width: 50%;
+	}
+	.w3_agile_social_icons{
+	    position: absolute;
+	    bottom: 8%;
+	    right: -5%;
+	}
+	.addventure{
+		width: 300px;
+		height: 350px;
+	}
+
 	#typed {
 		font-size: 1.45em;
 	}
@@ -2654,7 +2729,7 @@ h2.typoh2{
 	.w3ls_banner_bottom_right {
 		width: 55%;
 		margin: 2em auto 0;
-		border-top: 15px solid #ec9114;
+		border-top: 0 solid #ec9114;
 		padding: 0;
 	}
 	.w3layouts_register_right form {

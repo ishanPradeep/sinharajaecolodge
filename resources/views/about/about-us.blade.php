@@ -211,11 +211,11 @@
                         <div class="col-lg-2"></div>
                     
                             <div class="col-md-5 address-right text-left">
-                                <p>{!! nl2br(e($contact->bank_deposit1)) !!}</p>
+                                <p style="color: #4e4e4e">{!! nl2br(e($contact->bank_deposit1)) !!}</p>
                             </div>
 
-                            <div class="col-md-5 address-right text-left">
-                                <p>{!! nl2br(e($contact->bank_deposit2)) !!}</p>
+                            <div class="col-md-5 address-left text-left">
+                                <p style="color: #4e4e4e">{!! nl2br(e($contact->bank_deposit2)) !!}</p>
                             </div>
                 </div>
             </div>
