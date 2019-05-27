@@ -19,6 +19,88 @@
 
 
 
+
+
+<div style="padding: 10%">
+    <div>
+         <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
+            <span class="text-uppercase">{{$ourVideo->title}}</span></h3>
+    </div>
+    <div style="margin-bottom: 6%;margin-top: 6%">
+            <p class="tittle mb-xl-5 mb-4 text-dark text-center">{{$ourVideo->description}}</p>
+    </div>
+    <div class="row">
+        <video controls width="450" class="col-md-4 video-content">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video1)}}"
+                    type="video/webm">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video1)}}"
+                    type="video/mp4">
+        </video>
+
+        <video controls width="450" class="col-md-4 video-content">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video2)}}"
+                    type="video/webm">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video2)}}"
+                    type="video/mp4">
+        </video>
+
+        <video controls width="450" class="col-md-4 video-content">
+             <source src="{{ asset('thumbnail/'.$ourVideo->video3)}}"
+                    type="video/webm">
+            <source src="{{ asset('thumbnail/'.$ourVideo->video3)}}"
+                    type="video/mp4">
+        </video>
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+    <div class="home-page-event" style="
+    background: url({{ asset('thumbnail/'.$homePageEvent->image) }}) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+" >
+
+        <div class="container">
+            <div class="col-md-6 w3layouts_register_left" style="margin-top: 10%;">
+                @if (isset($homePageEvent))
+                    <h3>
+                            <?php
+                                $split = explode(" ", $homePageEvent->title);
+                            ?>
+                            <span>{{preg_replace('/\W\w+\s*(\W*)$/', '$1', $homePageEvent->title)}}</span>
+                            {{$split[count($split)-1]}}
+                    </h3>
+                    <p>{!! nl2br(e($homePageEvent->description)) !!}</p>
+                @else
+
+                @endif
+            </div>
+            <div class="col-md-6 w3layouts_register_right" style="margin-top: 10%;">
+
+                <iframe style="width: 100%; height: 400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156067.97738200496!2d80.34552679996301!3d6.465573631402424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2e21850db2f76db6!2sSinharaja+Rain+Forest+Entrance!5e0!3m2!1sen!2slk!4v1558059646919!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+<!-- //register -->
+
+
+
+
+
+
 <!-- banner-bottom -->  
 
    <div class="banner-bottom">
@@ -111,40 +193,6 @@
 
 
 
-    <div class="home-page-event" style="
-    background: url({{ asset('thumbnail/'.$homePageEvent->image) }}) no-repeat 0px 0px;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -ms-background-size: cover;
-    background-attachment: fixed;
-" >
-
-        <div class="container">
-            <div class="col-md-6 w3layouts_register_left" style="margin-top: 10%;">
-                @if (isset($homePageEvent))
-                    <h3>
-                            <?php
-                                $split = explode(" ", $homePageEvent->title);
-                            ?>
-                            <span>{{preg_replace('/\W\w+\s*(\W*)$/', '$1', $homePageEvent->title)}}</span>
-                            {{$split[count($split)-1]}}
-                    </h3>
-                    <p>{!! nl2br(e($homePageEvent->description)) !!}</p>
-                @else
-
-                @endif
-            </div>
-            <div class="col-md-6 w3layouts_register_right" style="margin-top: 10%;">
-
-                <iframe style="width: 100%; height: 400px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156067.97738200496!2d80.34552679996301!3d6.465573631402424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2e21850db2f76db6!2sSinharaja+Rain+Forest+Entrance!5e0!3m2!1sen!2slk!4v1558059646919!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-<!-- //register -->
 
 <!-- gallery-top -->
     <div class="gallery-top">
@@ -191,42 +239,6 @@
         </ul>
     </div> --}}
 <!-- //gallery -->
-
-<div style="padding: 10%">
-    <div>
-         <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
-                            <span class="text-uppercase">{{$ourVideo->title}}</span></h3>
-
-    </div>
-    <div style="margin-bottom: 6%;margin-top: 6%">
-            <p class="tittle mb-xl-5 mb-4 text-dark text-center">{{$ourVideo->description}}</p>
-        
-    </div>
-    <div class="row">
-        <video controls width="450" class="col-md-4 video-content">
-            <source src="{{ asset('thumbnail/'.$ourVideo->video1)}}"
-                    type="video/webm">
-            <source src="{{ asset('thumbnail/'.$ourVideo->video1)}}"
-                    type="video/mp4">
-        </video>
-
-        <video controls width="450" class="col-md-4 video-content">
-            <source src="{{ asset('thumbnail/'.$ourVideo->video2)}}"
-                    type="video/webm">
-            <source src="{{ asset('thumbnail/'.$ourVideo->video2)}}"
-                    type="video/mp4">
-        </video>
-
-        <video controls width="450" class="col-md-4 video-content">
-             <source src="{{ asset('thumbnail/'.$ourVideo->video3)}}"
-                    type="video/webm">
-            <source src="{{ asset('thumbnail/'.$ourVideo->video3)}}"
-                    type="video/mp4">
-        </video>
-
-
-    </div>
-</div>
 
 
 
