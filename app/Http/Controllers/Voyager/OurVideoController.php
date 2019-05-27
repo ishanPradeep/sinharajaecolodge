@@ -74,9 +74,9 @@ class OurVideoController extends Controller
      */
      public function store(Request $request){
         $this->validate($request,[
-            'video1' => 'mimes:mp4,mov,ogg,qt | max:20000',
-            'video2'=>'mimes:mp4,mov,ogg,qt | max:20000',
-            'video3'=>'mimes:mp4,mov,ogg,qt | max:20000',
+            'video1' => 'mimes:mp4,mov,ogg,qt',
+            'video2'=>'mimes:mp4,mov,ogg,qt',
+            'video3'=>'mimes:mp4,mov,ogg,qt',
             'video_one'=> 'required',
             'video_two'=> 'required',
             'video_three'=> 'required',

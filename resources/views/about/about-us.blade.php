@@ -94,7 +94,7 @@
     </section>
     <!--//newsletter-->
     <!-- Team -->
-    <div class="team py-5">
+   {{--  <div class="team py-5">
         <div class="container py-xl-5 py-lg-3">
             <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
                         <span class="text-uppercase">Team</span>Our Agents</h3>
@@ -137,7 +137,7 @@
                
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- //team -->
 
 
