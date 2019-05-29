@@ -303,7 +303,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li><a href="{{$slider->link_for_facebook}}" class="w3_agileits_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                     <li><a href="{{$slider->link_for_agoda}}" class="agoda"><i class="agoda"></i><img src="{{ asset('images/agoda.png') }}" width="20"></a></li>
                     <li><a href="{{$slider->link_for_booking}}" class="booking"><i class="booking"></i>B.</a></li>
-                    <li><a href="{{$slider->link_for_tripadvisor}}" class="color_tripadvisor"><i class="fa fa-tripadvisor" aria-hidden="true"></i></li>
+                    <li><a href="{{$slider->link_for_tripadvisor}}" class="color_tripadvisor"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
 
                 </ul>
             </div>
