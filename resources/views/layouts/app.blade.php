@@ -197,6 +197,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             @endif
 
 
+
         <div class="container">
             <div class="agile_banner_info">
                 <div class="agile_banner_info1">
@@ -296,7 +297,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p style="margin-left: 25%;"> in the outskirts of the Sri Lanka rainforest of Sinharaja.</p>
             </div> -->
 
+                <img src="{{ asset('images/translations5.png') }}" width="150" style="position: absolute; margin-left: 75%; top: 45%;" />  
+
             <div class="banner_agile_para" style="margin-top:13%">
+
             </div>
             <div class="w3_agile_social_icons">
                 <ul class="agileinfo_social_icons">
