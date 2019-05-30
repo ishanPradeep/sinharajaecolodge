@@ -94,7 +94,7 @@
     </section>
     <!--//newsletter-->
     <!-- Team -->
-   {{--  <div class="team py-5">
+   <div class="team py-5">
         <div class="container py-xl-5 py-lg-3">
             <h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
                         <span class="text-uppercase">Team</span>Our Agents</h3>
@@ -137,7 +137,7 @@
                
             </div>
         </div>
-    </div> --}}
+    </div> 
     <!-- //team -->
 
 
@@ -153,12 +153,11 @@
                     <div class="col-lg-4 address-grid-w3l">
                         <div class="row address-info">
                             <div class="col-md-3 address-left text-center">
-                                <i class="far fa-map"></i>
+                                <img src="{{ asset('images/address.png') }}" width="30">
                             </div>
                             <div class="col-md-9 address-right text-left">
                                 <h6 class="ad-info text-uppercase mb-2">Address</h6>
-                                <p> California, USA
-
+                                <p> {{$slider->address}}
                                 </p>
                             </div>
                         </div>
@@ -166,12 +165,12 @@
                     <div class="col-lg-4 address-grid-w3l">
                         <div class="row address-info">
                             <div class="col-md-3 address-left text-center">
-                                <i class="far fa-envelope"></i>
+                                <img src="{{ asset('images/email.png') }}" width="30">
                             </div>
                             <div class="col-md-9 address-right text-left">
                                 <h6 class="ad-info text-uppercase mb-2">Email</h6>
                                 <p>Email :
-                                    <a href="mailto:example@email.com"> mail@example.com</a>
+                                    <a href="#"> {{$slider->email}}</a>
                                 </p>
                             </div>
 
@@ -180,11 +179,12 @@
                     <div class="col-lg-4 address-grid-w3l">
                         <div class="row address-info">
                             <div class="col-md-3 address-left text-center">
-                                <i class="fas fa-mobile-alt"></i>
+                                <img src="{{ asset('images/tel.png') }}" width="30">
                             </div>
                             <div class="col-md-9 address-right text-left">
                                 <h6 class="ad-info text-uppercase mb-2">Phone</h6>
-                                <p>+1 234 567 8901</p>
+                                <p>{{$slider->contact_number1}}</p>
+                                <p>{{$slider->contact_number2}}</p>
 
                             </div>
                         </div>

@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="{{ asset('css/smoothbox.css/') }}" type='text/css' media="all" />
     <!-- font-awesome icons -->
     <link href="{{ asset('css/font-awesome.css/') }}" rel="stylesheet">
+
      {{-- <link href="{{ asset('css/gallery/fontawesome-all.min.css/') }}" rel="stylesheet"> --}}
      <!-- //Custom Theme files -->
     <!-- online-fonts -->
